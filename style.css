@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+body{
+    font-family: 'sniglet',cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,#f83600 0%, #f9d423);
+}
+
+h1{
+color: #fff;
+letter-spacing: 5px;
+text-transform: uppercase;
+text-shadow: 4px 3px 6px rgba(0, 0, 0, 1);
+}
+
+.search{
+    position: relative;
+}
+
+.searchInput{
+    font-family: inherit;
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    height: 10px;
+    width: 15px;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+.searchInput,
+.searchBtn:focus{
+    outline: none;
+}
+
+.searchBtn{
+    background-color: #264653;
+    border: none;
+    color: #fff;
+    font-size: 34px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.search.active .searchInput{
+    width: 200px;
+    background-color: #fff;
+}
+.search.active .searchBtn{
+    transform: translateX(198px);
+    background-color: #fff;
+    color: tomato;
+  
+}
+.poke-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+   
+}
+
+.pokemon{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+color: #fefefe;
+
+}
+
+.image-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+}
+
+.image-container img{
+    width: 180px;
+    opacity: 0.75;
+    transition: all 0.3s ease;
+   
+}
+.pokemon:hover .image-container img{
+    opacity: 1;
+    transform: scale(1.25);
+}
+.poke-info{
+    margin-top: 20px;
+}
+.poke-id{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3rem;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+
+}
+.poke-name{
+    letter-spacing: 2px;
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+}
+
+.small small{
+    padding: 0 5px;
+}
+.poke-type{
+    margin-top: 10px;
+}
+ 
+.poke-type{
+    margin-top: 10px;
+}
+
+
+
+
+
